@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome - POWER ORIZONE</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+                    Image("download2.webp");
+        background-size: cover;
+        color: rgb(18, 1, 1);
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        padding: 15px 30px;
+        margin: 10px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .login-btn {
+        background-color: red;
+        color: white;
+    }
+
+    .signup-btn {
+        background-color: #333;
+        color: white;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Welcome to POWER ORIZONE🎬</h1>
+    <p>Unlimited movies, series and more.</p>
+
+    <!-- LOGIN BUTTON -->
+    <button class="login-btn" onclick="goToLogin()">Login</button>
+
+    <!-- SIGNUP BUTTON -->
+    <button class="signup-btn" onclick="goToSignup()">Create Account</button>
+</div>
+
+<script>
+function goToLogin() {
+    window.location.href = "login.html";
+}
+
+function goToSignup() {
+    window.location.href = "Create.html";
+}
+</script>
+
+</body>
+</html>
